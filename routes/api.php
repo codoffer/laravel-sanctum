@@ -3,8 +3,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\API\v1\AuthController;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -28,7 +26,3 @@ Route::group([
         Route::post('user/logout', 'AuthController@logout');
     });
 });
-
-/* Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-}); */
